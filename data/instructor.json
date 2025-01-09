@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "bio": "Expert in full-stack development.",
+      "gender": "Male",
+      "age": 30,
+      "UserId": 1,
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "bio": "Specialist in data analysis and machine learning.",
+      "gender": "Female",
+      "age": 28,
+      "UserId": 2,
+      "createdAt": "2025-01-02T11:00:00Z",
+      "updatedAt": "2025-01-02T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "bio": "JavaScript frameworks guru.",
+      "gender": "Female",
+      "age": 25,
+      "UserId": 3,
+      "createdAt": "2025-01-03T12:00:00Z",
+      "updatedAt": "2025-01-03T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Bob Williams",
+      "bio": "Experienced in business process optimization.",
+      "gender": "Male",
+      "age": 32,
+      "UserId": 4,
+      "createdAt": "2025-01-04T13:00:00Z",
+      "updatedAt": "2025-01-04T13:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Eve Davis",
+      "bio": "Creative graphic designer with a flair for digital art.",
+      "gender": "Female",
+      "age": 27,
+      "UserId": 5,
+      "createdAt": "2025-01-05T14:00:00Z",
+      "updatedAt": "2025-01-05T14:00:00Z"
+    }
+  ]
+  

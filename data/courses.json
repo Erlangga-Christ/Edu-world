@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Full-Stack Web Development",
+      "price": 199.99,
+      "duration": "6 weeks",
+      "CategoryId": 1,
+      "UserId": 1,
+      "createdAt": "2025-01-01T14:00:00Z",
+      "updatedAt": "2025-01-01T14:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Business Management 101",
+      "price": 149.99,
+      "duration": "4 weeks",
+      "CategoryId": 2,
+      "UserId": 4,
+      "createdAt": "2025-01-02T15:00:00Z",
+      "updatedAt": "2025-01-02T15:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Graphic Design Basics",
+      "price": 129.99,
+      "duration": "5 weeks",
+      "CategoryId": 3,
+      "UserId": 5,
+      "createdAt": "2025-01-03T16:00:00Z",
+      "updatedAt": "2025-01-03T16:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Data Science",
+      "price": 179.99,
+      "duration": "8 weeks",
+      "CategoryId": 4,
+      "UserId": 2,
+      "createdAt": "2025-01-04T17:00:00Z",
+      "updatedAt": "2025-01-04T17:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Digital Marketing Strategies",
+      "price": 159.99,
+      "duration": "6 weeks",
+      "CategoryId": 5,
+      "UserId": 4,
+      "createdAt": "2025-01-05T18:00:00Z",
+      "updatedAt": "2025-01-05T18:00:00Z"
+    }
+  ]
+  

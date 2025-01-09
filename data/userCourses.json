@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "UserId": 1,
+      "CourseId": 1,
+      "enrolledAt": "2025-01-10T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "UserId": 2,
+      "CourseId": 4,
+      "enrolledAt": "2025-01-11T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "UserId": 3,
+      "CourseId": 1,
+      "enrolledAt": "2025-01-12T11:00:00Z"
+    },
+    {
+      "id": 4,
+      "UserId": 4,
+      "CourseId": 2,
+      "enrolledAt": "2025-01-13T12:00:00Z"
+    },
+    {
+      "id": 5,
+      "UserId": 5,
+      "CourseId": 3,
+      "enrolledAt": "2025-01-14T13:00:00Z"
+    },
+    {
+      "id": 6,
+      "UserId": 1,
+      "CourseId": 4,
+      "enrolledAt": "2025-01-15T14:00:00Z"
+    },
+    {
+      "id": 7,
+      "UserId": 2,
+      "CourseId": 5,
+      "enrolledAt": "2025-01-16T15:00:00Z"
+    },
+    {
+      "id": 8,
+      "UserId": 3,
+      "CourseId": 3,
+      "enrolledAt": "2025-01-17T16:00:00Z"
+    },
+    {
+      "id": 9,
+      "UserId": 4,
+      "CourseId": 5,
+      "enrolledAt": "2025-01-18T17:00:00Z"
+    },
+    {
+      "id": 10,
+      "UserId": 5,
+      "CourseId": 2,
+      "enrolledAt": "2025-01-19T18:00:00Z"
+    }
+  ]
+  
