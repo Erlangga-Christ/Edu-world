@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 const fs = require("fs");
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add seed commands here.
      *
@@ -13,19 +13,19 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
-    const users = JSON.parse(fs.readFileSync("../data/user.json", "utf-8")).map(
+     */
+    const users = JSON.parse(fs.readFileSync("./data/user.json", "utf-8")).map(
       (user) => {
         delete user.id;
         return {
-          ...author,
+          ...user,
         };
       }
     );
     await queryInterface.bulkInsert("Users", users, {});
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
@@ -33,5 +33,5 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
     await queryInterface.bulkDelete("Users", null, {});
-  }
+  },
 };

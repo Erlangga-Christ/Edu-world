@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "UserId": 1,
+    "CourseId": 1,
+    "InstructorId": 2,
+    "createdAt": "2025-01-06T00:00:00Z",
+    "updatedAt": "2025-01-06T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "UserId": 3,
+    "CourseId": 2,
+    "InstructorId": 5,
+    "createdAt": "2025-01-07T00:00:00Z",
+    "updatedAt": "2025-01-07T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "UserId": 4,
+    "CourseId": 3,
+    "InstructorId": 5,
+    "createdAt": "2025-01-08T00:00:00Z",
+    "updatedAt": "2025-01-08T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "UserId": 1,
+    "CourseId": 4,
+    "InstructorId": 2,
+    "createdAt": "2025-01-09T00:00:00Z",
+    "updatedAt": "2025-01-09T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "UserId": 3,
+    "CourseId": 5,
+    "InstructorId": 2,
+    "createdAt": "2025-01-10T00:00:00Z",
+    "updatedAt": "2025-01-10T00:00:00Z"
+  }
+]

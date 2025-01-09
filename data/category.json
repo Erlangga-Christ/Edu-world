@@ -1,38 +1,37 @@
 [
-    {
-      "id": 1,
-      "name": "Technology",
-      "description": "Courses related to technology and programming.",
-      "createdAt": "2025-01-01T12:00:00Z",
-      "updatedAt": "2025-01-01T12:00:00Z"
-    },
-    {
-      "id": 2,
-      "name": "Business",
-      "description": "Courses on business and management.",
-      "createdAt": "2025-01-02T13:00:00Z",
-      "updatedAt": "2025-01-02T13:00:00Z"
-    },
-    {
-      "id": 3,
-      "name": "Design",
-      "description": "Courses focused on graphic and digital design.",
-      "createdAt": "2025-01-03T14:00:00Z",
-      "updatedAt": "2025-01-03T14:00:00Z"
-    },
-    {
-      "id": 4,
-      "name": "Data Science",
-      "description": "Courses covering data analysis, machine learning, and AI.",
-      "createdAt": "2025-01-04T15:00:00Z",
-      "updatedAt": "2025-01-04T15:00:00Z"
-    },
-    {
-      "id": 5,
-      "name": "Marketing",
-      "description": "Courses on marketing strategies and digital marketing.",
-      "createdAt": "2025-01-05T16:00:00Z",
-      "updatedAt": "2025-01-05T16:00:00Z"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Programming",
+    "description": "Courses on programming languages",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Data Science",
+    "description": "Courses on data analysis and AI",
+    "createdAt": "2025-01-02T00:00:00Z",
+    "updatedAt": "2025-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Design",
+    "description": "Courses on UI/UX design",
+    "createdAt": "2025-01-03T00:00:00Z",
+    "updatedAt": "2025-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Business",
+    "description": "Courses on entrepreneurship",
+    "createdAt": "2025-01-04T00:00:00Z",
+    "updatedAt": "2025-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Marketing",
+    "description": "Courses on digital marketing",
+    "createdAt": "2025-01-05T00:00:00Z",
+    "updatedAt": "2025-01-05T00:00:00Z"
+  }
+]

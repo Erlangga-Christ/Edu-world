@@ -1,58 +1,57 @@
 [
-    {
-      "id": 1,
-      "UserId": 1,
-      "bio": "Software engineer with 10 years of experience.",
-      "discordName": "john#1234",
-      "gender": "Male",
-      "age": 30,
-      "lastEducation": "Bachelor's Degree in Computer Science",
-      "createdAt": "2025-01-01T10:00:00Z",
-      "updatedAt": "2025-01-01T10:00:00Z"
-    },
-    {
-      "id": 2,
-      "UserId": 2,
-      "bio": "Data scientist and AI enthusiast.",
-      "discordName": "jane#5678",
-      "gender": "Female",
-      "age": 28,
-      "lastEducation": "Master's Degree in Data Science",
-      "createdAt": "2025-01-02T11:00:00Z",
-      "updatedAt": "2025-01-02T11:00:00Z"
-    },
-    {
-      "id": 3,
-      "UserId": 3,
-      "bio": "Full-stack developer specializing in JavaScript frameworks.",
-      "discordName": "alice#9012",
-      "gender": "Female",
-      "age": 25,
-      "lastEducation": "Bachelor's Degree in Information Technology",
-      "createdAt": "2025-01-03T12:00:00Z",
-      "updatedAt": "2025-01-03T12:00:00Z"
-    },
-    {
-      "id": 4,
-      "UserId": 4,
-      "bio": "Business analyst with a passion for improving processes.",
-      "discordName": "bob#3456",
-      "gender": "Male",
-      "age": 32,
-      "lastEducation": "MBA in Business Administration",
-      "createdAt": "2025-01-04T13:00:00Z",
-      "updatedAt": "2025-01-04T13:00:00Z"
-    },
-    {
-      "id": 5,
-      "UserId": 5,
-      "bio": "Graphic designer and digital artist.",
-      "discordName": "eve#7890",
-      "gender": "Female",
-      "age": 27,
-      "lastEducation": "Bachelor's Degree in Graphic Design",
-      "createdAt": "2025-01-05T14:00:00Z",
-      "updatedAt": "2025-01-05T14:00:00Z"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "UserId": 1,
+    "bio": "Student of computer science",
+    "discordName": "john_d#1234",
+    "gender": "male",
+    "age": 22,
+    "lastEducation": "Undergraduate",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "UserId": 2,
+    "bio": "Instructor in programming",
+    "discordName": "jane_s#2345",
+    "gender": "female",
+    "age": 30,
+    "lastEducation": "Masters",
+    "createdAt": "2025-01-02T00:00:00Z",
+    "updatedAt": "2025-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "UserId": 3,
+    "bio": "Aspiring data scientist",
+    "discordName": "alice_j#3456",
+    "gender": "female",
+    "age": 24,
+    "lastEducation": "Undergraduate",
+    "createdAt": "2025-01-03T00:00:00Z",
+    "updatedAt": "2025-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "UserId": 4,
+    "bio": "Backend developer",
+    "discordName": "bob_b#4567",
+    "gender": "male",
+    "age": 28,
+    "lastEducation": "Diploma",
+    "createdAt": "2025-01-04T00:00:00Z",
+    "updatedAt": "2025-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "UserId": 5,
+    "bio": "Senior instructor",
+    "discordName": "chris_g#5678",
+    "gender": "male",
+    "age": 35,
+    "lastEducation": "PhD",
+    "createdAt": "2025-01-05T00:00:00Z",
+    "updatedAt": "2025-01-05T00:00:00Z"
+  }
+]

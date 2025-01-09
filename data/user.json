@@ -1,40 +1,47 @@
 [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "password": "password123"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "password": "password456",
-      "createdAt": "2025-01-02T11:00:00Z",
-      "updatedAt": "2025-01-02T11:00:00Z"
-    },
-    {
-      "id": 3,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "password": "password789",
-      "createdAt": "2025-01-03T12:00:00Z",
-      "updatedAt": "2025-01-03T12:00:00Z"
-    },
-    {
-      "id": 4,
-      "name": "Bob Williams",
-      "email": "bob.williams@example.com",
-      "password": "password321",
-      "createdAt": "2025-01-04T13:00:00Z",
-      "updatedAt": "2025-01-04T13:00:00Z"
-    },
-    {
-      "id": 5,
-      "name": "Eve Davis",
-      "email": "eve.davis@example.com",
-      "password": "password654",
-      "createdAt": "2025-01-05T14:00:00Z",
-      "updatedAt": "2025-01-05T14:00:00Z"
-    }
-  ]
+  {
+    "id": 1,
+    "userName": "JohnDoe",
+    "email": "john.doe@example.com",
+    "password": "password1",
+    "role": "student",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "userName": "JaneSmith",
+    "email": "jane.smith@example.com",
+    "password": "password2",
+    "role": "instructor",
+    "createdAt": "2025-01-02T00:00:00Z",
+    "updatedAt": "2025-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "userName": "AliceJohnson",
+    "email": "alice.johnson@example.com",
+    "password": "password3",
+    "role": "student",
+    "createdAt": "2025-01-03T00:00:00Z",
+    "updatedAt": "2025-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "userName": "BobBrown",
+    "email": "bob.brown@example.com",
+    "password": "password4",
+    "role": "student",
+    "createdAt": "2025-01-04T00:00:00Z",
+    "updatedAt": "2025-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "userName": "ChrisGreen",
+    "email": "chris.green@example.com",
+    "password": "password5",
+    "role": "instructor",
+    "createdAt": "2025-01-05T00:00:00Z",
+    "updatedAt": "2025-01-05T00:00:00Z"
+  }
+]

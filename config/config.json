@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "postgres",
-    "password": "postgres",
-    "database": "EduWord",
+    "password": "123",
+    "database": "EduWord_db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

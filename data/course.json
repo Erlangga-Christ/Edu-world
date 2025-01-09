@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Python",
+    "price": 100,
+    "duration": "10 hours",
+    "CategoryId": 1,
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Basics",
+    "price": 150,
+    "duration": "15 hours",
+    "CategoryId": 2,
+    "createdAt": "2025-01-02T00:00:00Z",
+    "updatedAt": "2025-01-02T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Principles",
+    "price": 120,
+    "duration": "12 hours",
+    "CategoryId": 3,
+    "createdAt": "2025-01-03T00:00:00Z",
+    "updatedAt": "2025-01-03T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Startup Essentials",
+    "price": 200,
+    "duration": "20 hours",
+    "CategoryId": 4,
+    "createdAt": "2025-01-04T00:00:00Z",
+    "updatedAt": "2025-01-04T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "title": "SEO and SEM Strategies",
+    "price": 130,
+    "duration": "13 hours",
+    "CategoryId": 5,
+    "createdAt": "2025-01-05T00:00:00Z",
+    "updatedAt": "2025-01-05T00:00:00Z"
+  }
+]
