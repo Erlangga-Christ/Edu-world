@@ -10,41 +10,84 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      User.hasOne(models.Profile, {
-        foreignKey: "UserId",
-      });
-      User.hasMany(models.Course, {
-        foreignKey: "UserId",
-      });
-      User.hasMany(models.Instructor, {
-        foreignKey: "InstructorId",
-      });
+      // User.hasOne(models.Profile, {
+      //   foreignKey: "UserId",
+      // });
+      // User.hasMany(models.Course, {
+      //   foreignKey: "UserId",
+      // });
+      // User.hasMany(models.Instructor, {
+      //   foreignKey: "InstructorId",
+      // });
     }
 
-    static async checkLogin(userName, password) {
-      const user = await User.findOne({ where: { userName } });
-      if (!user) {
-        throw { name: "errorLogin", msg: "Invalid username or password" };
+    static async checkLogin(username, password) {
+      const getUser = await User.findOne({
+        where: {
+          username,
+        },
+      });
+      // console.log(getUser);
+      let getErrors = {
+        name: "errorLogin",
+        msg: [],
+      };
+      if (!getUser) {
+        getErrors.msg.push("Username or password invalid");
+      } else {
+        const isPasswordValid = await bcrypt.compare(
+          password,
+          getUser.password
+        );
+        if (!isPasswordValid) {
+          getErrors.msg.push("Username or password invalid");
+        }
       }
-      const isMatch = await bcrypt.compare(password, user.password);
-      if (!isMatch) {
-        throw { name: "errorLogin", msg: "Invalid username or password" };
+
+      if (getErrors.msg.length > 0) {
+        throw getErrors;
       }
-      return user;
+
+      return getUser;
     }
   }
 
   User.init(
     {
-      userName: {
+      username: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: {
-          msg: "Username already exists",
-        },
         validate: {
           notEmpty: {
-            msg: "Username is required",
+            msg: "Username tidak boleh kosong",
+          },
+          notNull: {
+            msg: "Username tidak boleh kosong",
+          },
+          async cekUsername(value) {
+            if (value.length < 5) {
+              throw new Error("Username minimum 5 karakter");
+            }
+            const existingUser = await User.findOne({
+              where: { username: value },
+            });
+            if (existingUser) {
+              throw new Error(
+                "Username sudah ada tolong pakai username yang lain"
+              );
+            }
+          },
+        },
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Email tidak boleh kosong",
+          },
+          notNull: {
+            msg: "Email tidak boleh kosong",
           },
         },
       },
@@ -53,27 +96,16 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notEmpty: {
-            msg: "Password is required",
+            msg: "Password tidak boleh kosong",
           },
-          len: {
-            args: [6, 100],
-            msg: "Password should be at least 6 characters long",
+          notNull: {
+            msg: "Password tidak boleh kosong",
           },
         },
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: {
-          msg: "Email already exists",
-        },
-        validate: {
-          isEmail: {
-            msg: "Must be a valid email address",
-          },
-          notEmpty: {
-            msg: "Email is required",
-          },
+        cekPassword(value) {
+          if (value.length < 8) {
+            throw new Error("Password minimum 8 karakter");
+          }
         },
       },
       role: {
@@ -90,14 +122,16 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: "User",
-      hooks: {
-        beforeCreate: async (user) => {
-          const salt = await bcrypt.genSalt(10);
-          user.password = await bcrypt.hash(user.password, salt);
-        },
-      },
     }
   );
+
+  User.beforeCreate(async (instance) => {
+    const saltRounds = 8;
+    const myPlaintextPassword = instance.password;
+
+    const hash = await bcrypt.hash(myPlaintextPassword, saltRounds);
+    instance.password = hash;
+  });
 
   return User;
 };

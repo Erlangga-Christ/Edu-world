@@ -1,10 +1,19 @@
-const User = require("../models/user");
-
+const { User, UserProfile } = require("../models/index.js");
 class LoginController {
+  // static async getUser(req, res) {
+  //   try {
+  //     const users = await User.findAll();
+  //     // console.log(users);
+  //     res.send(users);
+  //   } catch (error) {
+  //     res.send(error);
+  //   }
+  // }
+
   static async loginUser(req, res) {
     try {
       const { error } = req.query;
-      res.render("login/loginUser", { error });
+      res.render("login", { error });
     } catch (error) {
       res.send(error);
     }
@@ -12,17 +21,33 @@ class LoginController {
 
   static async saveLoginUser(req, res) {
     try {
-      const { userName, password } = req.body;
-      const isValidLogin = await User.checkLogin(userName, password);
+      const { username, password } = req.body;
+      // console.log(username, password);
+
+      const isValidLogin = await User.checkLogin(username, password);
+
       if (isValidLogin) {
-        req.session.user = {
+        req.body = {
           id: isValidLogin.id,
           role: isValidLogin.role,
-          userName: isValidLogin.userName,
+          username: isValidLogin.username,
         };
       }
-      res.redirect("/");
+
+      global.session = req.body;
+      // res.render("homePage");
+      if (!isValidLogin.role) {
+        res.redirect("/");
+      } else if (isValidLogin.role === "student") {
+        res.redirect("/course");
+      } else if (isValidLogin.role === "instructor") {
+        res.redirect("/instructor");
+      } else {
+        res.redirect("/");
+      }
     } catch (error) {
+      console.log(error);
+
       if (error.name === "errorLogin") {
         return res.redirect("/login?error=" + error.msg);
       }
@@ -33,7 +58,8 @@ class LoginController {
   static async registerForm(req, res) {
     try {
       const { error } = req.query;
-      res.render("login/register", { error });
+
+      res.render("register", { error });
     } catch (error) {
       res.send(error);
     }
@@ -41,8 +67,31 @@ class LoginController {
 
   static async saveRegister(req, res) {
     try {
-      const { userName, password, email, role } = req.body;
-      await User.create({ userName, password, email, role });
+      const {
+        username,
+        password,
+        email,
+        role,
+        bio,
+        discordName,
+        gender,
+        age,
+        lastEducation,
+      } = req.body;
+
+      console.log(req.body);
+
+      const result = await User.create({ username, password, email, role });
+
+      await UserProfile.create({
+        bio,
+        discordName,
+        gender,
+        age,
+        lastEducation,
+        UserId: result.id,
+      });
+
       res.redirect("/login");
     } catch (error) {
       if (error.name === "SequelizeValidationError") {
@@ -57,12 +106,8 @@ class LoginController {
 
   static async logout(req, res) {
     try {
-      req.session.destroy((err) => {
-        if (err) {
-          return res.status(500).send("Internal server error");
-        }
-        res.redirect("/login");
-      });
+      global.session = {};
+      res.redirect("/login");
     } catch (error) {
       res.send(error);
     }

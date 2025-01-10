@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add Course</title>
+  </head>
+  <body>
+    <h1>Add Course</h1>
+
+    <form action="/course/add" method="post">
+      <label for="course">Select Course:</label>
+      <select id="course" name="courseId" required>
+        <% courses.forEach((course) => { %>
+        <option value="<%= course.id %>"><%= course.title %></option>
+        <% }) %></select
+      ><br /><br />
+      <button type="submit">Add Course</button>
+    </form>
+  </body>
+</html>

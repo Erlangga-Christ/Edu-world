@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "userName": "JohnDoe",
+    "username": "JohnDoe",
     "email": "john.doe@example.com",
     "password": "password1",
     "role": "student",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "userName": "JaneSmith",
+    "username": "JaneSmith",
     "email": "jane.smith@example.com",
     "password": "password2",
     "role": "instructor",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "userName": "AliceJohnson",
+    "username": "AliceJohnson",
     "email": "alice.johnson@example.com",
     "password": "password3",
     "role": "student",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "userName": "BobBrown",
+    "username": "BobBrown",
     "email": "bob.brown@example.com",
     "password": "password4",
     "role": "student",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "userName": "ChrisGreen",
+    "username": "ChrisGreen",
     "email": "chris.green@example.com",
     "password": "password5",
     "role": "instructor",

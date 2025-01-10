@@ -1,11 +1,12 @@
 const { User, UserProfile, UserCouse, Category, Course } = require("../models");
 
 class HomeController {
-  static home(req, res) {
+  static async home(req, res) {
     try {
-      const courses = Course.findAll();
-      res.render("homePage", { courses });
+      await res.render("homePage");
     } catch (error) {
+      console.log(error);
+
       res.send(error);
     }
   }

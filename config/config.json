@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": "123",
-    "database": "EduWord_db",
+    "database": "EduWorld_db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
